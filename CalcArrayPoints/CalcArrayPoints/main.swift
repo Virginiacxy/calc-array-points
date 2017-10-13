@@ -8,9 +8,6 @@
 
 import Foundation
 
-extension String: Error {
-}
-
 func add(valA:Int, valB:Int) -> Int {
     let value = valA + valB
     return value
@@ -109,7 +106,7 @@ func addDict(point1:Dictionary<String, Double>, point2:Dictionary<String, Double
     if point1["x"] != nil && point1["y"] != nil && point2["x"] != nil && point2["y"] != nil  {
         return ["x": point1["x"]! + point2["x"]!, "y": point1["y"]! + point2["y"]!]
     } else {
-        print("At least one of the x/y coordinated is missing")
+        print("At least one of the x/y coordinates is missing")
         return [:]
     }
 }
@@ -118,7 +115,7 @@ func subDict(point1:Dictionary<String, Double>, point2:Dictionary<String, Double
     if point1["x"] != nil && point1["y"] != nil && point2["x"] != nil && point2["y"] != nil  {
         return ["x": point1["x"]! - point2["x"]!, "y": point1["y"]! - point2["y"]!]
     } else {
-        print("At least one of the x/y coordinated is missing")
+        print("At least one of the x/y coordinates is missing")
         return [:]
     }
 }
@@ -127,7 +124,7 @@ func addDict(point1:Dictionary<String, Int>, point2:Dictionary<String, Int>) -> 
     if point1["x"] != nil && point1["y"] != nil && point2["x"] != nil && point2["y"] != nil  {
         return ["x": point1["x"]! + point2["x"]!, "y": point1["y"]! + point2["y"]!]
     } else {
-        print("At least one of the x/y coordinated is missing")
+        print("At least one of the x/y coordinates is missing")
         return [:]
     }
 }
@@ -136,7 +133,7 @@ func subDict(point1:Dictionary<String, Int>, point2:Dictionary<String, Int>) -> 
     if point1["x"] != nil && point1["y"] != nil && point2["x"] != nil && point2["y"] != nil  {
         return ["x": point1["x"]! - point2["x"]!, "y": point1["y"]! - point2["y"]!]
     } else {
-        print("At least one of the x/y coordinated is missing")
+        print("At least one of the x/y coordinates is missing")
         return [:]
     }
 }
