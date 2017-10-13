@@ -94,11 +94,11 @@ func generic2 (op:String, values:Int...) -> Int {
     }
 }
 
-func addTuples(point1:(x:Int, y:Int), point2:(x:Int, y:Int)) -> (x:Int, y:Int) {
+func addTuples(point1:(x:Int, y:Int), point2:(x:Int, y:Int)) -> (Int, Int) {
     return (point1.x + point2.x, point1.y + point2.y)
 }
 
-func subTuples(point1:(x:Int, y:Int), point2:(x:Int, y:Int)) -> (x:Int, y:Int) {
+func subTuples(point1:(x:Int, y:Int), point2:(x:Int, y:Int)) -> (Int, Int) {
     return (point1.x - point2.x, point1.y - point2.y)
 }
 
